@@ -1,80 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Montserrat:wght@400;700&family=Work+Sans:wght@400;500;800&display=swap');
-
-main {
-    justify-content: center;
-    flex-grow: 1;
-    gap: 2vw;
-    padding-left: 40px;
-    padding-right: 40px;
-    display: flex;
-    align-items: center;
-}
-
-main img {
-    width: 30%;
-}
-
-main p {
-    width: 40%;
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 40px;
-    font-style: normal;
+.montserrat {
+    font-family: "Montserrat", system-ui;
+    font-optical-sizing: auto;
     font-weight: 400;
-    line-height: normal;
-}
-
-span {
-    transition: 0.25s;
-    transition-timing-function: ease-in-out;
-    color: var(--accent-color-two);
-}
-span:hover {
-    color: var(--accent-color-three);
-}
-
-@media (max-width: 1000px) {
-    main {
-        flex-direction: column;
-    }
-    main p {
-        text-align: center;
-        order: 2;
-        font-size: 30px;
-        width: 80%;
-    }
-    main img {
-        order: 1;
-        width: 40%;
-    }
-}
-@media (max-width: 700px) {
-    main {
-        flex-direction: column;
-    }
-    main p {
-        text-align: center;
-        order: 2;
-        font-size: 30px;
-        width: 80%;
-    }
-    main img {
-        order: 1;
-        width: 50%;
-    }
-}
-@media (max-width: 500px) {
-    main {
-        flex-direction: column;
-    }
-    main p {
-        text-align: center;
-        order: 2;
-        font-size: 30px;
-        width: 80%;
-    }
-    main img {
-        order: 1;
-        width: 60%;
-    }
-}
+    font-style: normal;
+  }
+  
+  :root {
+    --dark-color: #635bff;
+    --light-color: #80e9ff;
+  }
+  
+  body {
+    background-color: #1e1e1e;
+  }
+  
+  .main-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .text-box {
+    justify-content: center;
+    text-align: left q;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    color: white;
+  }
+  
+  .text-box h1 {
+    font-size: 50px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .text-box p {
+    font-size: 25px;
+    margin: 0;
+  }
+  
+  .image-box {
+    justify-content: center;
+  }
+  
+  .name {
+    color: #03dac5;
+  }
+  svg {
+    cursor: pointer;
+  }
+  
+  #darkGroup {
+    fill: var(--dark-color);
+  }
+  
+  #lightGroup {
+    fill: var(--light-color);
+  }
+  
