@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Montserrat:wght@400;700&family=Work+Sans:wght@400;500;800&display=swap');
+
+:root {
+    --primary-color: #121212;
+    --secondary-color: #181818;
+    --accent-color-one: #ffffff;
+    --accent-color-two: #03DAC5;
+    --accent-color-three: #BB86FC;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    height: 40px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+nav button {
+    height: 100%;
+    background: none;
+    border: none;
+    color: var(--accent-color-one);
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: 0.25s;
+    transition-timing-function: ease-in-out;
+}
+
+nav button:hover {
+    color: var(--accent-color-three);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+@media (max-width: 500px) {
+    nav {
+        margin-bottom: 20px;
+    }
+    nav button {
+        font-size: 15px;
+    }
+}
